@@ -25,7 +25,7 @@ function Agregar() {
   }
 
   return (
-    <center>
+    <center>      
       <Card sx={{width: 'max-content'}}>
         <CardContent>
           <Box
@@ -150,8 +150,13 @@ function Agregar() {
               />
             </div>
           </Box>
-        </CardContent>
+        </CardContent>        
         <CardActions sx={{marginLeft: '30%'}}>
+          <Button variant="contained" color="success" onClick={() => {
+            navigate('/buscar')
+          }}>
+            Buscar
+          </Button>
           <Button variant="contained" color="success" onClick={handleSaveButton}>
             Guardar
           </Button>
@@ -161,7 +166,7 @@ function Agregar() {
             Ver
           </Button>
         </CardActions>
-      </Card>
+      </Card>  
     </center>
   );
 }

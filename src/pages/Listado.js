@@ -93,7 +93,7 @@ function Listado(){
                         </TableBody>
                     </Table>
                 </TableContainer><br/>
-                <EditModal open={open} handleClose={() => setOpen(false)} persona={selected}/>            
+                <EditModal open={open} handleClose={() => setOpen(false)} persona={selected}/><br/>       
                 <Button variant="contained" color="secondary" onClick={() => {
                     navigate('/')
                 }}>Volver</Button>
